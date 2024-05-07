@@ -1,7 +1,7 @@
 dofile("$SURVIVAL_DATA/Scripts/game/managers/BeaconManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/EffectManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/ElevatorManager.lua")
-dofile("$CONTENT_DATA/Scripts/Game/Managers/RespawnManager.lua")
+dofile("$SURVIVAL_DATA/Scripts/Game/Managers/RespawnManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/UnitManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_constants.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/survival_harvestable.lua")
@@ -25,7 +25,7 @@ SurvivalGame.enableRestrictions = true
 SurvivalGame.enableFuelConsumption = true
 SurvivalGame.enableAmmoConsumption = true
 SurvivalGame.enableUpgrade = true
-SurvivalGame.defaultInventorySize = 10 -- I can't believe I found this AFTER I ADD MY OWN INVENTORY LIMIT   ┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻
+SurvivalGame.defaultInventorySize = 10
 
 local SyncInterval = 400 -- 400 ticks | 10 seconds
 local IntroFadeDuration = 1.1
@@ -794,9 +794,9 @@ function SurvivalGame.server_onPlayerJoined(self, player, newPlayer)
 	if newPlayer then
 		sm.container.beginTransaction()
 	
-		sm.container.setItem(inventory, 0, tool_lift, 1)
-		sm.container.setItem(inventory, 1, tool_sledgehammer, 1)
-		sm.container.setItem(inventory, 2, tool_connect, 1)
+		-- sm.container.setItem(inventory, 0, tool_lift, 1)
+		sm.container.setItem(inventory, 0, tool_sledgehammer, 1)
+		sm.container.setItem(inventory, 1, tool_connect, 1)
 	
 		sm.container.endTransaction()
 	end

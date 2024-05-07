@@ -57,7 +57,8 @@ g_crap_pools["robot_bits"] = {
     {uid = obj_interactive_robotsynthhead, weight = 10},
     {uid = obj_interactive_robotbliphead01, weight = 10},
     {uid = obj_decor_screw01, weight = 5},
-    {uid = obj_decor_screw02, weight = 5}
+    {uid = obj_decor_screw02, weight = 5},
+    {uid = obj_consumable_sunshake, stack_size=3, weight = 5},
   }
 }
 

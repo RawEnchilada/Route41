@@ -1,9 +1,9 @@
 {
    "allow_add_mods" : true,
    "custom_icons" : false,
-   "description" : "The purpose of the game is to drive...\n\nIt sounds so boring that only people with holes in their brains would play this.\n\nWe made it because we got frustrated at The Long Drives crappy multiplayer.\n\nAlso I wanna keep updating this. If you wanna get involved and have something to contribute, shoot me a message.",
-   "localId" : "a5779a78-3588-4d09-a8bf-e0fd5d42b7ce",
-   "name" : "Drive",
+   "description" : "Can you reach the end?",
+   "localId" : "1570ab6f-bbfb-4f65-bc64-2a2bad09387f",
+   "name" : "Route 41",
    "type" : "Custom Game",
    "version" : 0
 }
