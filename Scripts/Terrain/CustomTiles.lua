@@ -14,93 +14,96 @@ function initCustomTiles()
 		AddTile( 3001504, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_04.tile", 3 ), 
 		AddTile( 3001505, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_05.tile", 3 ), 
 		AddTile( 3001506, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_06.tile", 3 ),
-		AddTile( 3001507, "$CONTENT_DATA/Terrain/Tiles/Desert/desert_01.tile", 3 ),
-		AddTile( 3001508, "$CONTENT_DATA/Terrain/Tiles/Desert/desert_02.tile", 3 ),
-		AddTile( 3001509, "$CONTENT_DATA/Terrain/Tiles/Desert/desert_03.tile", 3 ),
-		AddTile( 3001510, "$CONTENT_DATA/Terrain/Tiles/Desert/desert_04.tile", 3 ),
-		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/Desert/desert_05.tile", 3 ),
+		AddTile( 3001507, "$CONTENT_DATA/Terrain/Tiles/desert_01.tile", 3 ),
+		AddTile( 3001508, "$CONTENT_DATA/Terrain/Tiles/desert_02.tile", 3 ),
+		AddTile( 3001509, "$CONTENT_DATA/Terrain/Tiles/desert_03.tile", 3 ),
+		AddTile( 3001510, "$CONTENT_DATA/Terrain/Tiles/desert_04.tile", 3 ),
+		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/desert_05.tile", 3 ),
+        AddTile( 3001512, "$CONTENT_DATA/Terrain/Tiles/desert_06.tile", 3 ),
+        AddTile( 3001513, "$CONTENT_DATA/Terrain/Tiles/desert_farmbot_01.tile", 1 ),
+        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_loot_01.tile", 1 ),
+        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_bunker_01.tile", 1 ),
 	}
 
   -- Just north/south straight road tiles with no cliff data
   g_roads = { 
 		tiles = { 
-			AddTile( 1128001, "$CONTENT_DATA/Terrain/Tiles/Road/01.tile" ), 
-			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/Road/02.tile" ), 
-			AddTile( 1128003, "$CONTENT_DATA/Terrain/Tiles/Road/03.tile" ), 
-			AddTile( 1128004, "$CONTENT_DATA/Terrain/Tiles/Road/04.tile" ), 
-			AddTile( 1128005, "$CONTENT_DATA/Terrain/Tiles/Road/05.tile" ), 
-			AddTile( 1128006, "$CONTENT_DATA/Terrain/Tiles/Road/06.tile" ), 
-			AddTile( 1128007, "$CONTENT_DATA/Terrain/Tiles/Road/07.tile" ), 
-			AddTile( 1128008, "$CONTENT_DATA/Terrain/Tiles/Road/08.tile" ), 
-			AddTile( 1128009, "$CONTENT_DATA/Terrain/Tiles/Road/09.tile" ), 
-			AddTile( 1128010, "$CONTENT_DATA/Terrain/Tiles/Road/10.tile" ), 
-			AddTile( 1128011, "$CONTENT_DATA/Terrain/Tiles/Road/11.tile" ), 
-			AddTile( 1128012, "$CONTENT_DATA/Terrain/Tiles/Road/12.tile" ), 
-			AddTile( 1128013, "$CONTENT_DATA/Terrain/Tiles/Road/13.tile" ), 
-			AddTile( 1128014, "$CONTENT_DATA/Terrain/Tiles/Road/14.tile" ), 
-			AddTile( 1128015, "$CONTENT_DATA/Terrain/Tiles/Road/15.tile" ), 
-			AddTile( 1128016, "$CONTENT_DATA/Terrain/Tiles/Road/16.tile" ),
-			AddTile( 1128017, "$CONTENT_DATA/Terrain/Tiles/Road/17.tile" ),
-			AddTile( 1128018, "$CONTENT_DATA/Terrain/Tiles/Road/18.tile" ),
-			AddTile( 1128019, "$CONTENT_DATA/Terrain/Tiles/Road/19.tile" ),
-			AddTile( 1128020, "$CONTENT_DATA/Terrain/Tiles/Road/20.tile" ),
-			AddTile( 1128021, "$CONTENT_DATA/Terrain/Tiles/Road/21.tile" ),
+			AddTile( 1128001, "$CONTENT_DATA/Terrain/Tiles/road_01.tile" ), 
+			AddTile( 1128002, "$CONTENT_DATA/Terrain/Tiles/road_02.tile" ), 
+			AddTile( 1128003, "$CONTENT_DATA/Terrain/Tiles/road_03.tile" ), 
+			AddTile( 1128004, "$CONTENT_DATA/Terrain/Tiles/road_04.tile" ), 
+			AddTile( 1128005, "$CONTENT_DATA/Terrain/Tiles/road_05.tile" ), 
+			AddTile( 1128006, "$CONTENT_DATA/Terrain/Tiles/road_06.tile" ), 
+			AddTile( 1128007, "$CONTENT_DATA/Terrain/Tiles/road_07.tile" ), 
+			AddTile( 1128008, "$CONTENT_DATA/Terrain/Tiles/road_08.tile" ), 
+			AddTile( 1128009, "$CONTENT_DATA/Terrain/Tiles/road_09.tile" ), 
+			AddTile( 1128010, "$CONTENT_DATA/Terrain/Tiles/road_10.tile" ), 
+			AddTile( 1128011, "$CONTENT_DATA/Terrain/Tiles/road_11.tile" ), 
+			AddTile( 1128012, "$CONTENT_DATA/Terrain/Tiles/road_12.tile" ), 
+			AddTile( 1128013, "$CONTENT_DATA/Terrain/Tiles/road_13.tile" ), 
+			AddTile( 1128014, "$CONTENT_DATA/Terrain/Tiles/road_14.tile" ), 
+			AddTile( 1128015, "$CONTENT_DATA/Terrain/Tiles/road_15.tile" ), 
+			AddTile( 1128016, "$CONTENT_DATA/Terrain/Tiles/road_16.tile" ),
+			AddTile( 1128017, "$CONTENT_DATA/Terrain/Tiles/road_17.tile" ),
+			AddTile( 1128018, "$CONTENT_DATA/Terrain/Tiles/road_18.tile" ),
+			AddTile( 1128019, "$CONTENT_DATA/Terrain/Tiles/road_19.tile" ),
+			AddTile( 1128020, "$CONTENT_DATA/Terrain/Tiles/road_20.tile" ),
+			AddTile( 1128021, "$CONTENT_DATA/Terrain/Tiles/road_21.tile" ),
 		},
 		rotation = 3
 	}
 
   g_road_ends = { 
-		AddTile( 1293000, "$CONTENT_DATA/Terrain/Tiles/Road/road_end.tile" ), 
+		AddTile( 1293000, "$CONTENT_DATA/Terrain/Tiles/road_end.tile" ), 
 	}
 	
   g_starter_connectors = { 
-		AddTile( 5323001, "$CONTENT_DATA/Terrain/Tiles/Road/StarterConnectionRoad.tile" ), 
+		AddTile( 5323001, "$CONTENT_DATA/Terrain/Tiles/road_start.tile" ), 
 	}
 
   g_elevators = { 
-		AddTile( 9423000, "$CONTENT_DATA/Terrain/Tiles/Elevator/elevator.tile" ), 
+		AddTile( 9423000, "$CONTENT_DATA/Terrain/Tiles/elevator.tile" ), 
 	}
 
   g_fences = {
-		AddTile( 5002500, "$CONTENT_DATA/Terrain/Tiles/Fence/fence_01.tile", 5 ),
-		AddTile( 5002501, "$CONTENT_DATA/Terrain/Tiles/Fence/fence_02.tile", 5 ),
+		AddTile( 5002500, "$CONTENT_DATA/Terrain/Tiles/fence_01.tile", 5 ),
+		AddTile( 5002501, "$CONTENT_DATA/Terrain/Tiles/fence_02.tile", 5 ),
 	}
 
   g_fence_corners = {
-		AddTile( 5002600, "$CONTENT_DATA/Terrain/Tiles/Fence/fence_corner_01.tile", 5 ),
+		AddTile( 5002600, "$CONTENT_DATA/Terrain/Tiles/fence_corner_01.tile", 5 ),
 	}
 
   g_scorched = {
-		AddTile( 1232500, "$CONTENT_DATA/Terrain/Tiles/Scorched/scorched_01.tile", 5 ),
-		AddTile( 1232501, "$CONTENT_DATA/Terrain/Tiles/Scorched/scorched_02.tile", 5 ),
-		AddTile( 1232502, "$CONTENT_DATA/Terrain/Tiles/Scorched/scorched_03.tile", 5 ),
-		AddTile( 1232503, "$CONTENT_DATA/Terrain/Tiles/Scorched/scorched_04.tile", 5 ),
+		AddTile( 1232500, "$CONTENT_DATA/Terrain/Tiles/scorched_01.tile", 5 ),
+		AddTile( 1232501, "$CONTENT_DATA/Terrain/Tiles/scorched_02.tile", 5 ),
+		AddTile( 1232502, "$CONTENT_DATA/Terrain/Tiles/scorched_03.tile", 5 ),
+		AddTile( 1232503, "$CONTENT_DATA/Terrain/Tiles/scorched_04.tile", 5 ),
 	}
 
 	g_starter_houses = {
-		AddTile( 1222500, "$CONTENT_DATA/Terrain/Tiles/Starter House.tile" )
+		AddTile( 1222500, "$CONTENT_DATA/Terrain/Tiles/starter_house.tile" )
 	}
 	
 	g_desert_pois = {
-		{tile = AddTile( 3210300, "$CONTENT_DATA/Terrain/Tiles/DesertPois/poi_01.tile", 5 ), size = 4},
-		{tile = AddTile( 3210301, "$CONTENT_DATA/Terrain/Tiles/DesertPois/poi_02.tile", 5 ), size = 2},
-		{tile = AddTile( 3210302, "$CONTENT_DATA/Terrain/Tiles/DesertPois/ship_01.tile", 5 ), size = 1},
-		{tile = AddTile( 3210303, "$CONTENT_DATA/Terrain/Tiles/DesertPois/RadioTower01.tile", 5 ), size = 1}
+		{tile = AddTile( 3210300, "$CONTENT_DATA/Terrain/Tiles/poi_01.tile", 5 ), size = 4},
+		{tile = AddTile( 3210301, "$CONTENT_DATA/Terrain/Tiles/poi_02.tile", 5 ), size = 2},
+		{tile = AddTile( 3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 5 ), size = 1},
+		{tile = AddTile( 3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 5 ), size = 1}
 	}
 
 	-- Commented tiles are desert-ified kiosk tiles from survival
 	-- Flippable lets the tile be on the other side of the road, rotates by 180 as well
 	g_road_pois = {
-		{tile = AddTile( 4201000, "$CONTENT_DATA/Terrain/Tiles/RoadPois/bunker_01.tile", 5 ), size = 1, offset = 1, rotation = 3, flippable = true},
-	-- {tile = AddTile( 4201001, "$CONTENT_DATA/Terrain/Tiles/RoadPois/kiosk_64_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-	-- {tile = AddTile( 4201002, "$CONTENT_DATA/Terrain/Tiles/RoadPois/kiosk_64_02.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-	-- {tile = AddTile( 4201003, "$CONTENT_DATA/Terrain/Tiles/RoadPois/kiosk_64_03.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-		{tile = AddTile( 4201004, "$CONTENT_DATA/Terrain/Tiles/RoadPois/Shop_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-		{tile = AddTile( 4201005, "$CONTENT_DATA/Terrain/Tiles/RoadPois/PetrolStation01.tile", 5 ), size = 1, offset = 1, rotation = 0, flippable = true},
-		{tile = AddTile( 4201006, "$CONTENT_DATA/Terrain/Tiles/RoadPois/Garage01.tile", 5 ), size = 1, offset = 0, rotation = 1, flippable = true},
-		{tile = AddTile( 4201007, "$CONTENT_DATA/Terrain/Tiles/RoadPois/ObservationTower01.tile", 5 ), size = 1, offset = 2, rotation = 0, flippable = true},
-		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/RoadPois/BusStop01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/RoadPois/RadioStation01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+	-- {tile = AddTile( 4201001, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+	-- {tile = AddTile( 4201002, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_02.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+	-- {tile = AddTile( 4201003, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_03.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 4201004, "$CONTENT_DATA/Terrain/Tiles/rpoi_shop_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 4201005, "$CONTENT_DATA/Terrain/Tiles/rpoi_petrol_station_01.tile", 5 ), size = 1, offset = 1, rotation = 0, flippable = true},
+		{tile = AddTile( 4201006, "$CONTENT_DATA/Terrain/Tiles/rpoi_garage_01.tile", 5 ), size = 1, offset = 0, rotation = 1, flippable = true},
+		{tile = AddTile( 4201007, "$CONTENT_DATA/Terrain/Tiles/rpoi_observation_tower_01.tile", 5 ), size = 1, offset = 2, rotation = 0, flippable = true},
+		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_bus_stop_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 	}
 end
 
