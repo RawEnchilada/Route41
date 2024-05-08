@@ -21,8 +21,7 @@ function initCustomTiles()
 		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/desert_05.tile", 3 ),
         AddTile( 3001512, "$CONTENT_DATA/Terrain/Tiles/desert_06.tile", 3 ),
         AddTile( 3001513, "$CONTENT_DATA/Terrain/Tiles/desert_farmbot_01.tile", 1 ),
-        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_loot_01.tile", 1 ),
-        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_bunker_01.tile", 1 ),
+        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_loot_01.tile", 1 )
 	}
 
   -- Just north/south straight road tiles with no cliff data
@@ -86,10 +85,12 @@ function initCustomTiles()
 	}
 	
 	g_desert_pois = {
-		{tile = AddTile( 3210300, "$CONTENT_DATA/Terrain/Tiles/poi_01.tile", 5 ), size = 4},
-		{tile = AddTile( 3210301, "$CONTENT_DATA/Terrain/Tiles/poi_02.tile", 5 ), size = 2},
-		{tile = AddTile( 3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 5 ), size = 1},
-		{tile = AddTile( 3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 5 ), size = 1}
+		{tile = AddTile( 3210300, "$CONTENT_DATA/Terrain/Tiles/poi_01.tile", 4 ), size = 4},
+		{tile = AddTile( 3210301, "$CONTENT_DATA/Terrain/Tiles/poi_02.tile", 4 ), size = 2},
+		{tile = AddTile( 3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 1 ), size = 1},
+		{tile = AddTile( 3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 4 ), size = 1},
+        {tile = AddTile( 3210304, "$CONTENT_DATA/Terrain/Tiles/poi_bunker_01.tile", 2 ), size = 1},
+        {tile = AddTile( 3210304, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1 ), size = 1},
 	}
 
 	-- Commented tiles are desert-ified kiosk tiles from survival
@@ -103,7 +104,8 @@ function initCustomTiles()
 		{tile = AddTile( 4201006, "$CONTENT_DATA/Terrain/Tiles/rpoi_garage_01.tile", 5 ), size = 1, offset = 0, rotation = 1, flippable = true},
 		{tile = AddTile( 4201007, "$CONTENT_DATA/Terrain/Tiles/rpoi_observation_tower_01.tile", 5 ), size = 1, offset = 2, rotation = 0, flippable = true},
 		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_bus_stop_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 4201009, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 42010010, "$CONTENT_DATA/Terrain/Tiles/rpoi_food_truck_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 	}
 end
 

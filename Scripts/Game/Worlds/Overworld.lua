@@ -1,5 +1,4 @@
 dofile("$CONTENT_DATA/Scripts/Game/Worlds/BaseWorld.lua")
-
 dofile("$SURVIVAL_DATA/Scripts/game/managers/WaterManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/PackingStationManager.lua")
 dofile("$CONTENT_DATA/Scripts/Terrain/Util.lua")
@@ -352,6 +351,7 @@ function Overworld.server_onCellCreated(self, x, y)
 	--end
 
 	self:sv_loadCrapOnCell(x, y)
+    self:sv_spawnBotsOnCell(x, y)
 
 	g_unitManager:sv_onWorldCellLoaded(self, x, y)
 	self.packingStationManager:sv_onCellLoaded(x, y)

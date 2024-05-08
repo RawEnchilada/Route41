@@ -10,12 +10,12 @@ I did not like many of the changes made in the original custom game so this fork
  - Readded Hunger, Thirst (they deplete slowly since there aren't any renewable sources)
  - Allowed bed respawns
  - Removed lift
-
-## More to come:
- - Removed most blocks from builds to enforce creative building with the available parts
+ - Added bots
+ - Removed most blocks from starting builds to enforce creative building with the available parts
  - A couple more points of interest
  - Added a dressing bot and cloth boxes
- - Added bots
+
+## More to come:
  - End goal
 
 

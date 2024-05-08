@@ -25,12 +25,12 @@ local FastFoodCostPerHpRecovery = 0.2
 local FoodMultipler = 1.1
 local WaterMultipler = 1.1
 
-local FoodCostPerStamina = 0.005
-local WaterCostPerStamina = 0.025
+local FoodCostPerStamina = 0.02
+local WaterCostPerStamina = 0.04
 local SprintStaminaCost = 0.7 / 80 -- Per tick while sprinting
 
-local FoodLostPerSecond = 80 / 3.5 / 24 / 60
-local WaterLostPerSecond = 80 / 2.5 / 24 / 60
+local FoodLostPerSecond = 100 / 3.5 / 24 / 60
+local WaterLostPerSecond = 100 / 2.5 / 24 / 60
 
 local BreathLostPerTick = ( 100 / 60 ) / 40
 
