@@ -26,8 +26,8 @@ local FoodMultipler = 1.1
 local WaterMultipler = 1.1
 
 local FoodCostPerStamina = 0.02
-local WaterCostPerStamina = 0.04
-local SprintStaminaCost = 0.7 / 80 -- Per tick while sprinting
+local WaterCostPerStamina = 0.1
+local SprintStaminaCost = 0.7 / 40 -- Per tick while sprinting
 
 local FoodLostPerSecond = 100 / 3.5 / 24 / 60
 local WaterLostPerSecond = 100 / 2.5 / 24 / 60
