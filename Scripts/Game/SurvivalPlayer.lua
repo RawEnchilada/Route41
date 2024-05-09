@@ -505,12 +505,7 @@ function SurvivalPlayer.sv_n_tryRespawn( self )
 end
 
 function SurvivalPlayer.sv_e_onSpawnCharacter( self )
-	if self.sv.saved.isNewPlayer then
-		-- Intro cutscene for new player
-		if not g_survivalDev then
-			--self:sv_e_startLocalCutscene( "camera_approach_crash" )
-		end
-	elseif self.sv.spawnparams.respawn then
+	if self.sv.spawnparams.respawn then
 		local playerBed = g_respawnManager:sv_getPlayerBed( self.player )
 		if playerBed and playerBed.shape and sm.exists( playerBed.shape ) and playerBed.shape.body:getWorld() == self.player.character:getWorld() then
 			-- Attempt to seat the respawned character in a bed

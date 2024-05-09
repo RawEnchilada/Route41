@@ -90,7 +90,9 @@ function initCustomTiles()
 		{tile = AddTile( 3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 1 ), size = 1},
 		{tile = AddTile( 3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 4 ), size = 1},
         {tile = AddTile( 3210304, "$CONTENT_DATA/Terrain/Tiles/poi_bunker_01.tile", 2 ), size = 1},
-        {tile = AddTile( 3210304, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1 ), size = 1},
+        {tile = AddTile( 3210305, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1 ), size = 1},
+        {tile = AddTile( 3210306, "$CONTENT_DATA/Terrain/Tiles/poi_shack_01.tile", 3 ), size = 1},
+        {tile = AddTile( 3210307, "$CONTENT_DATA/Terrain/Tiles/poi_pasture_01.tile", 2 ), size = 1},
 	}
 
 	-- Commented tiles are desert-ified kiosk tiles from survival

@@ -77,6 +77,18 @@ g_crap_pools["shop"] = {
     }
 }
 
+g_crap_pools["pasture"] = {
+    weight = 0,
+    draws = {
+        { uid = obj_resource_cotton,      stack_size = 3, weight = 1 },
+        { uid = obj_consumable_sunshake,  stack_size = 3, weight = 5 },
+        { uid = obj_consumable_sunshake,  stack_size = 2, weight = 5 },
+        { uid = obj_consumable_milk,  stack_size = 3, weight = 5 },
+        { uid = obj_consumable_milk,  stack_size = 2, weight = 5 },
+        { uid = obj_consumable_milk,  stack_size = 1, weight = 5 },
+    }
+}
+
 g_crap_pools["cloth_shop"] = {
     weight = 0,
     draws = {

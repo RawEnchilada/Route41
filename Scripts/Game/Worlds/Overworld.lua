@@ -3,6 +3,8 @@ dofile("$SURVIVAL_DATA/Scripts/game/managers/WaterManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/PackingStationManager.lua")
 dofile("$CONTENT_DATA/Scripts/Terrain/Util.lua")
 dofile("$CONTENT_DATA/Scripts/Game/CrapShapes.lua")
+dofile("$SURVIVAL_DATA/Scripts/game/survival_spawns.lua")
+dofile("$SURVIVAL_DATA/Scripts/util.lua")
 
 Overworld = class(BaseWorld)
 
@@ -345,20 +347,17 @@ end
 function Overworld.server_onCellCreated(self, x, y)
 	BaseWorld.server_onCellCreated(self, x, y)
 	local tags = sm.cell.getTags(x, y)
-	--print(  "cell", x..",", y, "tags:" )
-	--for i,tag in ipairs( tags ) do
-	--	print( "\t"..i, tag )
-	--end
 
 	self:sv_loadCrapOnCell(x, y)
-    self:sv_spawnBotsOnCell(x, y)
+    self:sv_loadSpawnersOnCell( x, y )
+
+    local cell = { x = x, y = y, worldId = self.world.id, isStartArea = valueExists( tags, "STARTAREA" ), isPoi = valueExists( tags, "POI" ) }
+
+    SpawnFromNodeOnCellLoaded( cell, "TAPEBOT" )
+    SpawnFromNodeOnCellLoaded( cell, "FARMBOT" )
 
 	g_unitManager:sv_onWorldCellLoaded(self, x, y)
 	self.packingStationManager:sv_onCellLoaded(x, y)
-
-	if getDayCycleFraction() == 0.0 then
-		--g_unitManager:sv_requestTempUnitsOnCell( x, y )
-	end
 
 	local result, msg = pcall(function() self:sv_loadPathNodesOnCell(x, y) end)
 	if not result then
@@ -622,6 +621,12 @@ function Overworld.sv_e_spawnTempUnitsOnCell(self, params)
 			end
 		end
 	end
+end
+
+function Overworld.sv_loadSpawnersOnCell( self, x, y )
+	local nodes = sm.cell.getNodesByTag( x, y, "PLAYER_SPAWN" )
+	g_respawnManager:sv_addSpawners( nodes )
+	g_respawnManager:sv_setLatestSpawners( nodes )
 end
 
 function Overworld:sv_loadCrapOnCell(x, y)

@@ -13,9 +13,10 @@ I did not like many of the changes made in the original custom game so this fork
  - Added bots
  - Removed most blocks from starting builds to enforce creative building with the available parts
  - A couple more points of interest
- - Added a dressing bot and cloth boxes
+ - Added a dressing bot and outfit boxes
 
 ## More to come:
+ - More Points of Interest
  - End goal
 
 
