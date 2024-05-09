@@ -20,4 +20,4 @@ I did not like many of the changes made in the original custom game so this fork
  - End goal
 
 
-A huge thank you to FoilFields for the base custom game!
+A HUGE thank you to FoilFields for the base custom game!

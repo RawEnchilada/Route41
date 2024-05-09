@@ -21,7 +21,6 @@ function initCustomTiles()
 		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/desert_05.tile", 5 ),
         AddTile( 3001512, "$CONTENT_DATA/Terrain/Tiles/desert_06.tile", 5 ),
         AddTile( 3001513, "$CONTENT_DATA/Terrain/Tiles/desert_farmbot_01.tile", 1 ),
-        AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_loot_01.tile", 1 )
 	}
 
   -- Just north/south straight road tiles with no cliff data
@@ -93,6 +92,7 @@ function initCustomTiles()
         {tile = AddTile( 3210305, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1 ), size = 1},
         {tile = AddTile( 3210306, "$CONTENT_DATA/Terrain/Tiles/poi_shack_01.tile", 3 ), size = 1},
         {tile = AddTile( 3210307, "$CONTENT_DATA/Terrain/Tiles/poi_pasture_01.tile", 2 ), size = 1},
+        {tile = AddTile( 3210308, "$CONTENT_DATA/Terrain/Tiles/poi_small_loot_01.tile", 2 ), size = 1},
 	}
 
 	-- Commented tiles are desert-ified kiosk tiles from survival

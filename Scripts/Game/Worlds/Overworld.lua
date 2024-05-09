@@ -3,8 +3,6 @@ dofile("$SURVIVAL_DATA/Scripts/game/managers/WaterManager.lua")
 dofile("$SURVIVAL_DATA/Scripts/game/managers/PackingStationManager.lua")
 dofile("$CONTENT_DATA/Scripts/Terrain/Util.lua")
 dofile("$CONTENT_DATA/Scripts/Game/CrapShapes.lua")
-dofile("$SURVIVAL_DATA/Scripts/game/survival_spawns.lua")
-dofile("$SURVIVAL_DATA/Scripts/util.lua")
 
 Overworld = class(BaseWorld)
 
@@ -351,10 +349,6 @@ function Overworld.server_onCellCreated(self, x, y)
 	self:sv_loadCrapOnCell(x, y)
     self:sv_loadSpawnersOnCell( x, y )
 
-    local cell = { x = x, y = y, worldId = self.world.id, isStartArea = valueExists( tags, "STARTAREA" ), isPoi = valueExists( tags, "POI" ) }
-
-    SpawnFromNodeOnCellLoaded( cell, "TAPEBOT" )
-    SpawnFromNodeOnCellLoaded( cell, "FARMBOT" )
 
 	g_unitManager:sv_onWorldCellLoaded(self, x, y)
 	self.packingStationManager:sv_onCellLoaded(x, y)

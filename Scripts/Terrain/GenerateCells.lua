@@ -185,7 +185,7 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
     roadPois = nil
     
     -- Desert pois
-    local desertPoiCount = math.random(4, 10)
+    local desertPoiCount = math.random(6, 10)
     local desertPois = {}
     print("Generating "..desertPoiCount.." desert POIs")
 

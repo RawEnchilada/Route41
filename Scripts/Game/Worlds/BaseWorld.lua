@@ -107,7 +107,7 @@ function BaseWorld.server_onCellCreated( self, x, y )
 	local cell = { x = x, y = y, worldId = self.world.id, isStartArea = valueExists( tags, "STARTAREA" ), isPoi = valueExists( tags, "POI" ) }
 
 
-  QuestEntityManager.Sv_OnWorldCellLoaded( self, x, y )
+    QuestEntityManager.Sv_OnWorldCellLoaded( self, x, y )
 
 	SpawnFromUuidOnCellLoaded( cell, obj_survivalobject_ruinchest )
 	SpawnFromUuidOnCellLoaded( cell, obj_survivalobject_farmerball )
@@ -122,6 +122,9 @@ function BaseWorld.server_onCellCreated( self, x, y )
 	SpawnFromNodeOnCellLoaded( cell, "TOTEBOT_GREEN" )
 	SpawnFromNodeOnCellLoaded( cell, "WOC" )
 	SpawnFromNodeOnCellLoaded( cell, "GLOWGORP" )
+
+    SpawnFromNodeOnCellLoaded( cell, "TAPEBOT" )
+    SpawnFromNodeOnCellLoaded( cell, "FARMBOT" )
 
 
 
@@ -212,6 +215,9 @@ function BaseWorld.server_onCellLoaded( self, x, y )
 		RespawnFromNodeOnCellReloaded( cell, "TOTEBOT_GREEN" )
 		RespawnFromNodeOnCellReloaded( cell, "WOC" )
 		RespawnFromNodeOnCellReloaded( cell, "GLOWGORP" )
+
+        -- RespawnFromNodeOnCellReloaded( cell, "TAPEBOT" )
+        -- RespawnFromNodeOnCellReloaded( cell, "FARMBOT" )
 
 
 
