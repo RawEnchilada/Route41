@@ -8,18 +8,18 @@ function initCustomTiles()
 
   -- Desert tiles
 	g_desert = {
-		AddTile( 3001501, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_01.tile", 3 ), 
-		AddTile( 3001502, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_02.tile", 3 ), 
-		AddTile( 3001503, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_03.tile", 3 ), 
-		AddTile( 3001504, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_04.tile", 3 ), 
-		AddTile( 3001505, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_05.tile", 3 ), 
-		AddTile( 3001506, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_06.tile", 3 ),
-		AddTile( 3001507, "$CONTENT_DATA/Terrain/Tiles/desert_01.tile", 3 ),
-		AddTile( 3001508, "$CONTENT_DATA/Terrain/Tiles/desert_02.tile", 3 ),
-		AddTile( 3001509, "$CONTENT_DATA/Terrain/Tiles/desert_03.tile", 3 ),
-		AddTile( 3001510, "$CONTENT_DATA/Terrain/Tiles/desert_04.tile", 3 ),
-		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/desert_05.tile", 3 ),
-        AddTile( 3001512, "$CONTENT_DATA/Terrain/Tiles/desert_06.tile", 3 ),
+		AddTile( 3001501, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_01.tile", 5 ), 
+		AddTile( 3001502, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_02.tile", 5 ), 
+		AddTile( 3001503, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_03.tile", 5 ), 
+		AddTile( 3001504, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_04.tile", 5 ), 
+		AddTile( 3001505, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_05.tile", 5 ), 
+		AddTile( 3001506, "$SURVIVAL_DATA/Terrain/Tiles/desert/Desert(1111)_06.tile", 5 ),
+		AddTile( 3001507, "$CONTENT_DATA/Terrain/Tiles/desert_01.tile", 5 ),
+		AddTile( 3001508, "$CONTENT_DATA/Terrain/Tiles/desert_02.tile", 5 ),
+		AddTile( 3001509, "$CONTENT_DATA/Terrain/Tiles/desert_03.tile", 5 ),
+		AddTile( 3001510, "$CONTENT_DATA/Terrain/Tiles/desert_04.tile", 5 ),
+		AddTile( 3001511, "$CONTENT_DATA/Terrain/Tiles/desert_05.tile", 5 ),
+        AddTile( 3001512, "$CONTENT_DATA/Terrain/Tiles/desert_06.tile", 5 ),
         AddTile( 3001513, "$CONTENT_DATA/Terrain/Tiles/desert_farmbot_01.tile", 1 ),
         AddTile( 3001514, "$CONTENT_DATA/Terrain/Tiles/desert_loot_01.tile", 1 )
 	}
@@ -106,6 +106,7 @@ function initCustomTiles()
 		{tile = AddTile( 4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_bus_stop_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 		{tile = AddTile( 4201009, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 		{tile = AddTile( 42010010, "$CONTENT_DATA/Terrain/Tiles/rpoi_food_truck_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
+		{tile = AddTile( 42010011, "$CONTENT_DATA/Terrain/Tiles/rpoi_car_wreck_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
 	}
 end
 

@@ -32,7 +32,7 @@ local IntroFadeDuration = 1.1
 local IntroEndFadeDuration = 1.1
 local IntroFadeTimeout = 5.0
 
-START_AREA_SPAWN_POINT = sm.vec3.new(79.3593, 27.5039, 136.696)
+START_AREA_SPAWN_POINT = sm.vec3.new(79.3593, 22.5039, 136.696)
 
 function SurvivalGame.server_onCreate(self)
 	
@@ -65,9 +65,9 @@ function SurvivalGame.server_onCreate(self)
 	print(self.sv.saved.data)
 	if self.sv.saved.data and self.sv.saved.data.dev then
 		g_godMode = true
-		g_survivalDev = true
 		sm.log.info("Starting SurvivalGame in DEV mode")
 	end
+    g_survivalDev = true
 
 	self:loadCraftingRecipes()
 	g_enableCollisionTumble = true
