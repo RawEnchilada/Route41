@@ -166,17 +166,17 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
     for i = 1, roadPoiCount, 1 do
         local y = math.random(progress == 0 and 2 or (yMin + padding + 2), yMax - padding - 2)
         
-        local poi = getRoadPoi(math.random(0, 100))
-        local flipped = poi.flippable and math.random() < 0.5
-        local poiOffset = poi.offset * (flipped and -1 or 1)
+        local rpoi = getRoadPoi(math.random(0, 100))
+        local flipped = rpoi.flippable and math.random() < 0.5
+        local poiOffset = rpoi.offset * (flipped and -1 or 1)
 
-        if validPlacement(poiOffset, y, poi.size, roadPois) then
-            print("Generating road POI at "..y)
+        if validPlacement(poiOffset, y, rpoi.size, roadPois) then
+            print("Generating road POI "..rpoi.name.." at "..y)
             if flipped then
                 print("Flipped road POI")
             end
             
-            writePoi(poi.tile, poiOffset, y, poi.size, (poi.rotation + (flipped and 2 or 0)) % 4, roadPois)
+            writePoi(rpoi.tile, poiOffset, y, rpoi.size, (rpoi.rotation + (flipped and 2 or 0)) % 4, roadPois)
         else 
             print("Not generating road POI at "..y)
         end
@@ -200,7 +200,7 @@ function generateOverworldCelldata(xMin, xMax, yMin, yMax, seed, data, padding, 
         local y = math.random(yMin + padding + 5, yMax - padding - 5 - (poi.size - 1))
 
         if validPlacement(x, y, poi.size, desertPois) then
-            print("Generating desert POI at "..x..", "..y)
+            print("Generating desert POI "..poi.name.." at "..x..", "..y)
             writePoi(poi.tile, x, y, poi.size, 0, desertPois)
         else
             print("Not generating desert POI at "..x..", "..y)

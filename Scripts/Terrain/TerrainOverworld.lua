@@ -48,7 +48,6 @@ function Create( xMin, xMax, yMin, yMax, seed, data )
 	print( "Seed: "..seed )
 	
 	print("Total cells: " .. (xMax - xMin + 1) * (yMax - yMin + 1))
-	print("DATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATADATA DATA DATAD ATA")
 	print(data)
 	-- print("Progress: " .. progress)
 	

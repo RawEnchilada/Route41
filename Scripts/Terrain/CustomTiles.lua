@@ -83,16 +83,16 @@ function initCustomTiles()
     }
 
     g_desert_pois = {
-        { tile = AddTile(3210300, "$CONTENT_DATA/Terrain/Tiles/poi_01.tile", 4),              size = 4 },
-        { tile = AddTile(3210301, "$CONTENT_DATA/Terrain/Tiles/poi_02.tile", 4),              size = 2 },
-        { tile = AddTile(3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 1),         size = 1 },
-        { tile = AddTile(3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 4),        size = 1 },
-        { tile = AddTile(3210304, "$CONTENT_DATA/Terrain/Tiles/poi_bunker_01.tile", 2),       size = 1 },
-        { tile = AddTile(3210305, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1),      size = 1 },
-        { tile = AddTile(3210306, "$CONTENT_DATA/Terrain/Tiles/poi_shack_01.tile", 3),        size = 1 },
-        { tile = AddTile(3210307, "$CONTENT_DATA/Terrain/Tiles/poi_pasture_01.tile", 2),      size = 1 },
-        { tile = AddTile(3210308, "$CONTENT_DATA/Terrain/Tiles/poi_small_loot_01.tile", 2),   size = 1 },
-        { tile = AddTile(3210309, "$CONTENT_DATA/Terrain/Tiles/poi_bike_wreck_01.tile", 2),   size = 1 },
+        { tile = AddTile(3210300, "$CONTENT_DATA/Terrain/Tiles/poi_01.tile", 4),            name = "poi_01",            size = 4 },
+        { tile = AddTile(3210301, "$CONTENT_DATA/Terrain/Tiles/poi_02.tile", 4),            name = "poi_02",            size = 2 },
+        { tile = AddTile(3210302, "$CONTENT_DATA/Terrain/Tiles/poi_ship_01.tile", 1),       name = "poi_ship_01",       size = 1 },
+        { tile = AddTile(3210303, "$CONTENT_DATA/Terrain/Tiles/poi_tower_01.tile", 4),      name = "poi_tower_01",      size = 1 },
+        { tile = AddTile(3210304, "$CONTENT_DATA/Terrain/Tiles/poi_bunker_01.tile", 2),     name = "poi_bunker_01",     size = 1 },
+        { tile = AddTile(3210305, "$CONTENT_DATA/Terrain/Tiles/poi_cloth_shop.tile", 1),    name = "poi_cloth_shop",    size = 1 },
+        { tile = AddTile(3210306, "$CONTENT_DATA/Terrain/Tiles/poi_shack_01.tile", 3),      name = "poi_shack_01",      size = 1 },
+        { tile = AddTile(3210307, "$CONTENT_DATA/Terrain/Tiles/poi_pasture_01.tile", 2),    name = "poi_pasture_01",    size = 1 },
+        { tile = AddTile(3210308, "$CONTENT_DATA/Terrain/Tiles/poi_small_loot_01.tile", 2), name = "poi_small_loot_01", size = 1 },
+        { tile = AddTile(3210309, "$CONTENT_DATA/Terrain/Tiles/poi_bike_wreck_01.tile", 2), name = "poi_bike_wreck_01", size = 1 },
     }
 
     -- Commented tiles are desert-ified kiosk tiles from survival
@@ -101,15 +101,15 @@ function initCustomTiles()
         -- {tile = AddTile( 4201001, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_01.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
         -- {tile = AddTile( 4201002, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_02.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
         -- {tile = AddTile( 4201003, "$CONTENT_DATA/Terrain/Tiles/rpoi_kiosk_64_03.tile", 5 ), size = 1, offset = 0, rotation = 3, flippable = true},
-        { tile = AddTile(4201004, "$CONTENT_DATA/Terrain/Tiles/rpoi_shop_01.tile", 5),                size = 1, offset = 0, rotation = 3, flippable = true },
-        { tile = AddTile(4201005, "$CONTENT_DATA/Terrain/Tiles/rpoi_petrol_station_01.tile", 5),      size = 1, offset = 1, rotation = 0, flippable = true },
-        { tile = AddTile(4201006, "$CONTENT_DATA/Terrain/Tiles/rpoi_garage_01.tile", 5),              size = 1, offset = 0, rotation = 1, flippable = true },
-        { tile = AddTile(4201007, "$CONTENT_DATA/Terrain/Tiles/rpoi_observation_tower_01.tile", 5),   size = 1, offset = 2, rotation = 0, flippable = true },
-        { tile = AddTile(4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_bus_stop_01.tile", 5),            size = 1, offset = 0, rotation = 3, flippable = true },
-        { tile = AddTile(4201009, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5),       size = 1, offset = 0, rotation = 3, flippable = true },
-        { tile = AddTile(42010010, "$CONTENT_DATA/Terrain/Tiles/rpoi_food_truck_01.tile", 3),         size = 1, offset = 0, rotation = 3, flippable = true },
-        { tile = AddTile(42010011, "$CONTENT_DATA/Terrain/Tiles/rpoi_car_wreck_01.tile", 3),          size = 1, offset = 0, rotation = 3, flippable = true },
-        { tile = AddTile(42010012, "$CONTENT_DATA/Terrain/Tiles/rpoi_truck_wreck_01.tile", 3),        size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(4201004, "$CONTENT_DATA/Terrain/Tiles/rpoi_shop_01.tile", 5),              name = "rpoi_shop_01",              size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(4201005, "$CONTENT_DATA/Terrain/Tiles/rpoi_petrol_station_01.tile", 5),    name = "rpoi_petrol_station_01",    size = 1, offset = 1, rotation = 0, flippable = true },
+        { tile = AddTile(4201006, "$CONTENT_DATA/Terrain/Tiles/rpoi_garage_01.tile", 5),            name = "rpoi_garage_01",            size = 1, offset = 0, rotation = 1, flippable = true },
+        { tile = AddTile(4201007, "$CONTENT_DATA/Terrain/Tiles/rpoi_observation_tower_01.tile", 5), name = "rpoi_observation_tower_01", size = 1, offset = 2, rotation = 0, flippable = true },
+        { tile = AddTile(4201008, "$CONTENT_DATA/Terrain/Tiles/rpoi_bus_stop_01.tile", 5),          name = "rpoi_bus_stop_01",          size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(4201009, "$CONTENT_DATA/Terrain/Tiles/rpoi_radio_station_01.tile", 5),     name = "rpoi_radio_station_01",     size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(42010010, "$CONTENT_DATA/Terrain/Tiles/rpoi_food_truck_01.tile", 3),       name = "rpoi_food_truck_01",        size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(42010011, "$CONTENT_DATA/Terrain/Tiles/rpoi_car_wreck_01.tile", 3),        name = "rpoi_car_wreck_01",         size = 1, offset = 0, rotation = 3, flippable = true },
+        { tile = AddTile(42010012, "$CONTENT_DATA/Terrain/Tiles/rpoi_truck_wreck_01.tile", 3),      name = "rpoi_truck_wreck_01",       size = 1, offset = 0, rotation = 3, flippable = true },
     }
 end
 
